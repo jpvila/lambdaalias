@@ -8,7 +8,9 @@ public class LambdaFunctionHandler implements RequestHandler<Object, String> {
     @Override
     public String handleRequest(Object input, Context context) {
         context.getLogger().log("Input: " + input);
-
+        
+        context.getLogger().log("Se agrego la caracteristia para Feature-BA101");
+        
         // TODO: implement your handler
         return "Hello from Lambda primer cambio!";
     }
